@@ -5,7 +5,7 @@ var gulp = require('gulp'),
    sourceMaps = require('gulp-sourcemaps')
 
 gulp.task('clean', function() {
-   return del('dist/');
+   return del('temp/');
 });
 
 gulp.task('js', function () {
@@ -21,12 +21,12 @@ gulp.task('js', function () {
          "noImplicitAny": false
       }))
       .pipe(sourceMaps.write())
-      .pipe(gulp.dest('dist/'))
+      .pipe(gulp.dest('temp/'))
 });
 
 gulp.task('html', function() {
    return gulp.src('src/**/*.html')
-      .pipe(gulp.dest('dist/'))
+      .pipe(gulp.dest('temp/'))
 })
 
 
