@@ -4,7 +4,7 @@ var TS_FILES = 'src/**/*.ts',
 var gulp = require('gulp'),
    ts = require('gulp-typescript'),
    del = require('del'),
-   run = require('run-sequence')
+   runSequence = require('run-sequence')
 sourceMaps = require('gulp-sourcemaps')
 
 
@@ -36,7 +36,7 @@ gulp.task('html', function() {
 
 
 gulp.task('build', function(done) {
-   run(
+   runSequence(
       'clean',
       ['ts', 'html'],
       done);
