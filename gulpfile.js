@@ -1,15 +1,20 @@
+var TS_FILES = 'src/**/*.ts',
+   HTML_FILES = 'src/**/*.html';
+
 var gulp = require('gulp'),
    ts = require('gulp-typescript'),
    del = require('del'),
    run = require('run-sequence')
-   sourceMaps = require('gulp-sourcemaps')
+sourceMaps = require('gulp-sourcemaps')
+
+
 
 gulp.task('clean', function() {
    return del('temp/');
 });
 
-gulp.task('js', function () {
-   return gulp.src('src/**/*.ts')
+gulp.task('ts', function () {
+   return gulp.src(TS_FILES)
       .pipe(sourceMaps.init())
       .pipe(ts({
          "target": "ES5",
@@ -25,7 +30,7 @@ gulp.task('js', function () {
 });
 
 gulp.task('html', function() {
-   return gulp.src('src/**/*.html')
+   return gulp.src(HTML_FILES)
       .pipe(gulp.dest('temp/'))
 })
 
@@ -33,8 +38,13 @@ gulp.task('html', function() {
 gulp.task('build', function(done) {
    run(
       'clean',
-      ['js', 'html'],
+      ['ts', 'html'],
       done);
 });
 
+gulp.task('watch', ['build'], function() {
+   gulp.watch(TS_FILES, ['ts']);
+   gulp.watch(HTML_FILES, ['html']);
+
+})
 
