@@ -1,0 +1,32 @@
+{
+  "name": "angular2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc -p src -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dankahle/angular2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dankahle/angular2/issues"
+  },
+  "homepage": "https://github.com/dankahle/angular2#readme",
+  "dependencies": {
+    "angular2": "2.0.0-alpha.44",
+    "systemjs": "0.19.2"
+  },
+  "devDependencies": {
+    "del": "^2.1.0",
+    "gulp": "^3.9.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-typescript": "^2.9.2",
+    "run-sequence": "^1.1.5",
+    "typescript": "^1.6.2"
+  }
+}
