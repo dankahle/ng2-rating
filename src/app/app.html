@@ -1,9 +1,2 @@
 
-<span class="title">{{title}}</span>
-<ul>
-   <li *ng-for="#hero of heroes" class="hero" [ng-class]="{selected: hero.id === selectedId}" (click)="selectedId = hero.id">{{hero.name}}</li>
-</ul>
-add: <input #new-hero
-       (keyup.enter)="addHero(newHero)">{{values}}
-<hr>
-{{heroes | json}}
+<hero-form></hero-form>
