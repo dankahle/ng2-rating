@@ -3,8 +3,8 @@ import { Hero } from './hero';
 
 @Component({
    selector: 'hero-form',
-   styleUrls: ['app/forms/hero-form.component.css'],
-   templateUrl: 'app/forms/hero-form.component.html',
+   styleUrls: ['app/heroForm/hero-form.component.css'],
+   templateUrl: 'app/heroForm/hero-form.component.html',
    directives: [CORE_DIRECTIVES, FORM_DIRECTIVES]
 })
 export class HeroFormComponent {

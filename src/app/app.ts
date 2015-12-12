@@ -1,5 +1,5 @@
 import {bootstrap, Component, CORE_DIRECTIVES, FORM_DIRECTIVES} from 'angular2/angular2';
-import {HeroFormComponent} from './forms/hero-form.component';
+import {HeroFormComponent} from './heroForm/hero-form.component';
 
 @Component({
    selector: 'my-app',
