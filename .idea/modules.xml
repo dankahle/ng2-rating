@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/dkng2.iml" filepath="$PROJECT_DIR$/.idea/dkng2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../rating/.idea/rating.iml" filepath="$PROJECT_DIR$/../rating/.idea/rating.iml" />
     </modules>
   </component>
 </project>

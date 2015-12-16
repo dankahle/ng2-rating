@@ -1,3 +1,6 @@
+<rating [rate]="rate" (rate-change)="onUpdate($event)"></rating></rating><br>
+<pre style="margin:15px 0;">Rate: <b>{{rate}}</b></pre>
 
-Hello {{name}}<br>
-<input [(ng-model)]="name">
+<!--easier way with syntactic sugar-->
+<rating [(rate)]="parentRate"></rating><br>
+<pre style="margin:15px 0;">parentRate: <b>{{parentRate}}</b></pre>
